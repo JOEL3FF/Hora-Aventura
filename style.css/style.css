@@ -1,0 +1,19 @@
+body{
+background: url(/img/imagen-main-uno.webp),no-repeat;
+
+}
+
+.nav{
+  background-color: black;
+ 
+}
+.nav-ul{
+  display: flex;
+justify-content: space-around;
+font-size: 2rem;
+}
+.nav-ul__li{
+color: rgb(255, 255, 255);
+list-style: none;
+
+}
