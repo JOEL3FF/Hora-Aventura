@@ -56,7 +56,7 @@ scroll-behavior: smooth;
 
 
 header{
-  background: url(https://github.com/JOEL3FF/Hora-Aventura/blob/main/img/imagen-main-uno.png)  center no-repeat;
+  background: url(https://raw.githubusercontent.com/JOEL3FF/Hora-Aventura/main/img/imagen-main-uno.png) center no-repeat;
   height: 100vh;
 
 }
@@ -121,7 +121,8 @@ font-size: 1.4rem;
 
 }
 .article{
-  background-image: url(https://github.com/JOEL3FF/Hora-Aventura/blob/main/img/fondo-fina-and-jacke.png)  ;
+  background-image: url(https://raw.githubusercontent.com/JOEL3FF/Hora-Aventura/main/img/fondo-fina-and-jacke.png
+)  ;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -134,7 +135,6 @@ color: var(--color-tres);
 .article-section__h,.article-section-dos__h{
   font-size: 3rem;
 }
-
 
 
 
