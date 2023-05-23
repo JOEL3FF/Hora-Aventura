@@ -26,9 +26,7 @@ scroll-behavior: smooth;
 
 
 
-header{
-  background: url(https://github.com/JOEL3FF/Hora-Aventura/blob/main/img/imagen-main-uno.png)  center no-repeat;
-  height: 100vh;
+
 /*Reseteo*/
 * { box-sizing: border-box; padding: 0; margin: 0 ;
 font-family: 'Anton', sans-serif;
@@ -58,7 +56,7 @@ scroll-behavior: smooth;
 
 
 header{
-  background: url(/img/imagen-main-uno.png)  center no-repeat;
+  background: url(https://github.com/JOEL3FF/Hora-Aventura/blob/main/img/imagen-main-uno.png)  center no-repeat;
   height: 100vh;
 
 }
