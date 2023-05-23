@@ -1,19 +1,114 @@
-body{
-  background-image: url(https://raw.githubusercontent.com/JOEL3FF/Hora-Aventura/main/img/imagen-main-uno.webp);
+/*Reseteo*/
+* { box-sizing: border-box; padding: 0; margin: 0 ;
+font-family: 'Anton', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Pangolin', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Sigmar', cursive;
+font-family: 'Ubuntu Condensed', sans-serif;
+
+}
+
+
+/*Variables*/
+:root{
+  --color-uno:#000;
+  --color-dos:#21211ec6;
+  --color-tres:#ffffff;
+scroll-behavior: smooth;
+ border: solid 0.3rem var(--color-uno);
+}
+
+/*Css editor*/
+
+
+
+header{
+  background: url(/img/imagen-main-uno.png)  center no-repeat;
+  height: 100vh;
 
 }
 
 .nav{
-  background-color: black;
- 
-}
-.nav-ul{
-  display: flex;
-justify-content: space-around;
-font-size: 2rem;
-}
-.nav-ul__li{
-color: rgb(255, 255, 255);
-list-style: none;
+background-color: var(--color-dos);
+position: sticky;
+top: 0;
 
 }
+.nav-ul{
+font-size: 2rem;
+display: flex;
+align-items: center;
+justify-content: space-around;
+min-height: 5rem;
+max-height: 1rem;
+
+}
+.nav-ul__li{
+list-style: none;
+height: 5rem;
+width: 35rem;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: background 0.4s linear;
+}
+.nav-ul__li:hover{
+ background-color:#0000009c;
+}
+
+.nav-ul__li__a{
+text-decoration: none;
+color:var(--color-tres);
+margin-right: 3rem;
+}
+
+.header-uno{
+  font-size: 2rem;
+ width: 30rem;
+ margin-left: auto;
+ margin-right: auto;
+  color: var(--color-tres); 
+ 
+}
+.seccion-uno,.seccion-dos,.seccion-tres{
+  width: 100%;
+  color: var(--color-tres);
+
+}
+.seccion-uno__fin,.seccion-uno__jacke,.seccion-tres__jacke-finn{
+width: 13%;
+height: 6rem;
+
+}
+.seccion-uno__finh,.seccion-uno__jackeh{
+font-size: 1.4rem;
+}
+.seccion-uno__finp,.seccion-uno__jackep,.seccion-tres__jacke-finn-p{
+font-size: 1.4rem;
+
+}
+.article{
+  background-image: url(/img/fondo-fina-and-jacke.png)  ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+color: var(--color-tres);
+}
+.article-section__p,.article-section-dos__p{
+  font-size: 1.rem;
+}
+.article-section__h,.article-section-dos__h{
+  font-size: 3rem;
+}
+
+
+
+
+
+
+
