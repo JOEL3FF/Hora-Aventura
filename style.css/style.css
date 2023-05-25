@@ -2,13 +2,6 @@
 
 /*Reseteo*/
 * { box-sizing: border-box; padding: 0; margin: 0 ;
-font-family: 'Anton', sans-serif;
-font-family: 'Lato', sans-serif;
-font-family: 'Pacifico', cursive;
-font-family: 'Pangolin', cursive;
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Sedgwick Ave Display', cursive;
 font-family: 'Sigmar', cursive;
 font-family: 'Ubuntu Condensed', sans-serif;
 
@@ -20,23 +13,61 @@ font-family: 'Ubuntu Condensed', sans-serif;
   --color-uno:#000;
   --color-dos:#21211ec6;
   --color-tres:#ffffff;
-scroll-behavior: smooth;
- 
+
 }
 
-/*Css editor*/
+                                                         /*Css editor*/
                                                          /*Media queria*/
+  
+                                                         
+ @media screen and (max-width:64em) {
+  
+ }      
+ @media screen and (max-width:48em) {
+  
+ } 
+  @media screen and (max-width:37.5em) {
+  
+ }   
+  @media screen and (max-width:30em) {
+    }
 
+
+  @media screen and (max-width:20em) {
+  
+    body{
+    height: 1000vh;
+    }
+    .aside{
+      bottom: 100rem;
+    }
+
+ }                                                       
+                                                   
+
+                                                      
+
+
+                                                     
 
 
 
 
                                                             /*Cabecera*/
 
-
+html{
+   
+  
+}
+body{
+  height: 280vh;
+   background: url(https://raw.githubusercontent.com/JOEL3FF/Hora-Aventura/main/img/imagen-main-uno.png);
+ 
+}
 header{
   background: url(https://raw.githubusercontent.com/JOEL3FF/Hora-Aventura/main/img/imagen-main-uno.png) center no-repeat;
  height: 100vh;
+
 }
 
 .nav{
@@ -88,7 +119,9 @@ font-size: 2rem;
   text-align: center;
 
 }
-.seccion-uno,.seccion-dos,.seccion-tres{
+.seccion-uno,
+.seccion-dos,
+.seccion-tres{
   color: var(--color-uno);
   background-color: var(--color-tres);
   margin: 2rem;
@@ -101,35 +134,54 @@ font-size: 2rem;
   transition: color 1s linear,background 1s linear,border-radius 1s linear;
 
 }
-.seccion-uno__fin,.seccion-uno__jacke,.seccion-tres__jacke-finn{
+
+
+.seccion-uno__fin,
+.seccion-uno__jacke,
+.seccion-tres__jacke-finn{
 width: 13%;
 height: 10rem;
 position: absolute;
 top: 3rem;
 right: 4rem;
+transition:transform 2s ease-in-out;
 
 
 }
-.seccion-uno__finh,.seccion-uno__jackeh,.seccion-tres__jacke-finn-h{
+.seccion-uno__finh,
+.seccion-uno__jackeh,
+.seccion-tres__jacke-finn-h{
 font-size: 2rem;
 text-align: center;
 margin-bottom: 1rem;
 }
-.seccion-uno__finp,.seccion-uno__jackep,.seccion-tres__jacke-finn-p{
+
+
+.seccion-uno__finp,
+.seccion-uno__jackep,
+.seccion-tres__jacke-finn-p{
 font-size: 1.3rem;
 width: 75%;
 text-align: center;
 line-height: 2rem;
-
 }                       
 
                                        /*Primera-Hoja-Interactivo*/
-.seccion-uno:hover,.seccion-dos:hover,.seccion-tres:hover{
+
+
+.seccion-uno:hover,
+.seccion-dos:hover,
+.seccion-tres:hover{
   background-color:#000000b3 ;
   color: var(--color-tres);
    border-radius: 10px 100px / 10px;
+}
 
 
+.seccion-uno__fin:hover,
+.seccion-uno__jacke:hover,
+.seccion-tres__jacke-finn:hover{
+transform: rotate(200deg);
 }
 
 
@@ -147,28 +199,39 @@ line-height: 2rem;
 color: var(--color-tres);
 display: grid;
 grid-template-columns: 1fr 1fr;
-
 }
-.article-section,.article-section-dos{
+
+
+.article-section,
+.article-section-dos{
   height: 95%;
 width: 90%;
   color: var(--color-uno);
 background-color: #ffffff95;
   margin: auto;
     transition: color 1s linear,background 1s linear,border-radius 1s linear;
-  
+ 
+    
 }
-.article-section__p,.article-section-dos__p{
+
+.article-section__p,
+.article-section-dos__p{
   font-size: 1.3rem;
 line-height: 2rem;
 }
-.article-section__h,.article-section-dos__h{
+
+
+.article-section__h,
+.article-section-dos__h{
 font-size: 2rem;
 text-align: center;
 margin-bottom: 1rem;
 }
+
                                       /*Segunda-Hoja-Animacion*/
-  .article-section:hover,.article-section-dos:hover{
+
+  .article-section:hover,
+  .article-section-dos:hover{
    background-color:#000000b3 ;
   color: var(--color-tres);
    border-radius: 10px 100px / 10px;
@@ -177,40 +240,117 @@ margin-bottom: 1rem;
                                                         /*Tercer-Hoja*/
   fieldset{
   background-color: #ffffffa0;
-height: 95%;
+height: 90%;
 width: 95%;
+padding: 2rem;
      }
 
   .article-dos{
 
     background:var(--color-uno) url(https://raw.githubusercontent.com/JOEL3FF/Hora-Aventura/main/img/fondo-final-hora-de-aventura.png) no-repeat  center;
-    height: 100vh;
+    height: 165vh;
     display: flex;
     justify-content: center;
     align-items: center;
- 
-  }      
+  }  
+  
+  
   .article-dos__h{
     font-size: 3rem;
     color: var(--color-uno);
-
     text-align: center;
   }  
-  .article-dos__h2,.article-dos__h3,.article-dos__h4{
 
+
+  .article-dos-two__h2,
+  .article-dos-three__h3,
+  .article-dos-for__h4{
     font-size: 2rem;
 text-align: center;
 margin-bottom: 1rem;
 margin-top: 1rem;
   } 
-  .article-dos__p,.article-dos__p2,.article-dos__p3,.article-dos__p4,li{
+
+
+  .article-dos-two__p,
+  .article-dos-two__p2,
+  .article-dos-three__p3,
+  .article-dos-for__p4,
+  li{
     font-size: 1.3rem;
-line-height: 1.5rem;
+line-height: 2rem;
 list-style: none;
-  }                                            
+text-align: justify;
+  }    
+  
 
-                                                        /*Tercer-Hoja-animacion*/
+  .article-dos-two,
+  .article-dos-three,
+  .article-dos-for{
+  transition: color 1s linear,background 1.5s linear;
+  } 
 
+
+   img[alt=fin-lista]{
+    max-width: 1%;
+    height: auto;
+    margin: 1rem;
+    position: relative;
+    top: 0.6rem; }
+  
+   
+
+                                                 /*Tercer-Hoja-animacion*/
+       img[alt=fin-lista]:hover{
+   
+    animation: pulse 2s ease infinite;
+  }
+     
+
+
+  @keyframes pulse {
+
+    0%{
+transform: scale(1);
+    }
+    50%{
+      transform: scale(1.6);
+      
+    }
+    100%{
+      transform: scale(1);
+    }
+    
+    
+  }
+ 
+
+
+                                                        /*Aside de mi*/
+  .aside{
+    background-color: var(--color-tres);
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    top: 211rem;
+ display: flex;
+
+
+  } 
+ .aside__a-git,
+ .aside__a-linkedin{
+  text-decoration: none;
+  text-align: center;
+  width: 50%;
+ border-right: solid 1px var(--color-uno);
+ }
+
+
+.aside__a-git-img,
+.aside__a-linkedin-img{
+width: 10%;
+height: 100%;
+ } 
 
 
 
