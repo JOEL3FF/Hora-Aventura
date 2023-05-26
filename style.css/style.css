@@ -1,11 +1,14 @@
 
 
 /*Reseteo*/
-* { box-sizing: border-box; padding: 0; margin: 0 ;
+* { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0; margin: 0 ;
 font-family: 'Sigmar', cursive;
 font-family: 'Ubuntu Condensed', sans-serif;
 
 }
+  [id]{
+    scroll-margin-top: 5rem;
+  }
 
 
 /*Variables*/
@@ -13,96 +16,113 @@ font-family: 'Ubuntu Condensed', sans-serif;
   --color-uno:#000;
   --color-dos:#21211ec6;
   --color-tres:#ffffff;
+  scroll-behavior: smooth;
+
+}
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  /*--- Mobile portrait ---*/
+html{
+  font-size: 0.35rem;
+
+ 
+}
+
+}
+@media only screen and (min-width : 480px) and (max-width : 595px) {
+  /*--- Mobile landscape ---*/
+  html{
+  font-size: 0.45rem;
+}
+}
+@media only screen and (min-width : 595px) and (max-width : 690px) {
+  /*--- Small tablet portrait ---*/
+   html{
+  font-size: 0.55rem;
+}
+
+}
+@media only screen and (min-width : 690px) and (max-width : 800px) {
+  /*--- Tablet portrait ---*/
+     html{
+  font-size: 0.65rem;
+}
+
+}
+@media only screen and (min-width : 800px) and (max-width : 1024px) {
+  /*--- Small tablet landscape ---*/
+     html{
+  font-size: 0.75rem;
+}
+
+}
+@media only screen and (min-width : 1024px) and (max-width : 1224px) {
+  /*--- Tablet landscape --- */
+       html{
+  font-size: 0.85rem;
+}
+
+
 
 }
 
                                                          /*Css editor*/
-                                                         /*Media queria*/
-  
-                                                         
- @media screen and (max-width:64em) {
-  
- }      
- @media screen and (max-width:48em) {
-  
- } 
-  @media screen and (max-width:37.5em) {
-  
- }   
-  @media screen and (max-width:30em) {
-    }
-
-
-  @media screen and (max-width:20em) {
-  
-    body{
-    height: 1000vh;
-    }
-    .aside{
-      bottom: 100rem;
-    }
-
- }                                                       
-                                                   
-
-                                                      
-
-
                                                      
 
-
-
-
+                                                    
                                                             /*Cabecera*/
 
-html{
-   
-  
-}
+
 body{
-  height: 280vh;
-   background: url(https://raw.githubusercontent.com/JOEL3FF/Hora-Aventura/main/img/imagen-main-uno.png);
- 
+
+background-color: #000000db;
+margin-top: 5rem;
 }
 header{
   background: url(https://raw.githubusercontent.com/JOEL3FF/Hora-Aventura/main/img/imagen-main-uno.png) center no-repeat;
  height: 100vh;
 
+
 }
 
 .nav{
 background-color: var(--color-dos);
-position: sticky;
+position:fixed;
 top: 0;
-z-index: 999;
-
-}
-.nav-ul{
-font-size: 2rem;
-display: flex;
-align-items: center;
-justify-content: space-around;
-min-height: 5rem;
-max-height: 1rem;
-
-}
-.nav-ul__li{
-list-style: none;
+right: 0;
+left: 0;
 height: 5rem;
-width: 35rem;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: background 0.4s linear;
-}
-.nav-ul__li:hover{
- background-color:#0000009c;
+z-index: 999;
+display: -ms-grid;
+display: grid;
+-ms-grid-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+text-align: center;
+background-color: rgb(0, 0, 0);
+
+
 }
 
-.nav-ul__li__a{
+
+
+.nav__a{
 text-decoration: none;
 color:var(--color-tres);
-margin-right: 3rem;
+font-size: 1.6rem;
+-webkit-transition: background 1s linear;
+-o-transition: background 1s linear;
+transition: background 1s linear;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+.nav__a:hover{
+background-color: #91c8d4;
 }
 
 
@@ -111,8 +131,10 @@ margin-right: 3rem;
 
 
 .header-uno{
-font-size: 2rem;
- width: 30rem;
+font-size:2rem;
+ width: -webkit-max-content,-webkit-min-content;
+ width: -moz-max-content,-moz-min-content;
+ width: max-content,min-content;
  margin-left: auto;
  margin-right: auto;
   color: var(--color-tres); 
@@ -131,6 +153,8 @@ font-size: 2rem;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  -webkit-transition: color 1s linear,background 1s linear,border-radius 1s linear;
+  -o-transition: color 1s linear,background 1s linear,border-radius 1s linear;
   transition: color 1s linear,background 1s linear,border-radius 1s linear;
 
 }
@@ -140,11 +164,15 @@ font-size: 2rem;
 .seccion-uno__jacke,
 .seccion-tres__jacke-finn{
 width: 13%;
-height: 10rem;
+height: 60%;
 position: absolute;
 top: 3rem;
 right: 4rem;
+-webkit-transition:-webkit-transform 2s ease-in-out;
+transition:-webkit-transform 2s ease-in-out;
+-o-transition:transform 2s ease-in-out;
 transition:transform 2s ease-in-out;
+transition:transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
 
 
 }
@@ -181,7 +209,9 @@ line-height: 2rem;
 .seccion-uno__fin:hover,
 .seccion-uno__jacke:hover,
 .seccion-tres__jacke-finn:hover{
-transform: rotate(200deg);
+-webkit-transform: rotate(200deg);
+    -ms-transform: rotate(200deg);
+        transform: rotate(200deg);
 }
 
 
@@ -195,23 +225,30 @@ transform: rotate(200deg);
 )  ;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+height: -webkit-max-content;
+height: -moz-max-content;
+height: max-content;
 color: var(--color-tres);
+display: -ms-grid;
 display: grid;
+-ms-grid-columns: 1fr 1fr;
 grid-template-columns: 1fr 1fr;
+
 }
 
 
 .article-section,
 .article-section-dos{
-  height: 95%;
+  height: 98%;
 width: 90%;
   color: var(--color-uno);
 background-color: #ffffff95;
-  margin: auto;
+    -webkit-transition: color 1s linear,background 1s linear,border-radius 1s linear;
+    -o-transition: color 1s linear,background 1s linear,border-radius 1s linear;
     transition: color 1s linear,background 1s linear,border-radius 1s linear;
- 
-    
+   padding: 3rem;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .article-section__p,
@@ -240,7 +277,9 @@ margin-bottom: 1rem;
                                                         /*Tercer-Hoja*/
   fieldset{
   background-color: #ffffffa0;
-height: 90%;
+height:-webkit-max-content,-webkit-min-content;
+height:-moz-max-content,-moz-min-content;
+height:max-content,min-content;
 width: 95%;
 padding: 2rem;
      }
@@ -248,10 +287,22 @@ padding: 2rem;
   .article-dos{
 
     background:var(--color-uno) url(https://raw.githubusercontent.com/JOEL3FF/Hora-Aventura/main/img/fondo-final-hora-de-aventura.png) no-repeat  center;
-    height: 165vh;
+   height:-webkit-max-content,-webkit-min-content ;
+   height:-moz-max-content,-moz-min-content ;
+   height:max-content,min-content ;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+   padding-bottom: 1rem;
   }  
   
   
@@ -287,13 +338,15 @@ text-align: justify;
   .article-dos-two,
   .article-dos-three,
   .article-dos-for{
+  -webkit-transition: color 1s linear,background 1.5s linear;
+  -o-transition: color 1s linear,background 1.5s linear;
   transition: color 1s linear,background 1.5s linear;
   } 
 
 
    img[alt=fin-lista]{
     max-width: 1%;
-    height: auto;
+    height: 3%;
     margin: 1rem;
     position: relative;
     top: 0.6rem; }
@@ -303,7 +356,30 @@ text-align: justify;
                                                  /*Tercer-Hoja-animacion*/
        img[alt=fin-lista]:hover{
    
-    animation: pulse 2s ease infinite;
+    -webkit-animation: pulse 2s ease infinite;
+   
+            animation: pulse 2s ease infinite;
+  }
+     
+
+
+  @-webkit-keyframes pulse {
+
+    0%{
+-webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50%{
+      -webkit-transform: scale(1.6);
+              transform: scale(1.6);
+      
+    }
+    100%{
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    
+    
   }
      
 
@@ -311,14 +387,17 @@ text-align: justify;
   @keyframes pulse {
 
     0%{
-transform: scale(1);
+-webkit-transform: scale(1);
+        transform: scale(1);
     }
     50%{
-      transform: scale(1.6);
+      -webkit-transform: scale(1.6);
+              transform: scale(1.6);
       
     }
     100%{
-      transform: scale(1);
+      -webkit-transform: scale(1);
+              transform: scale(1);
     }
     
     
@@ -330,15 +409,18 @@ transform: scale(1);
   .aside{
     background-color: var(--color-tres);
     width: 100%;
-    height: 3rem;
-    position: absolute;
-    top: 211rem;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex;
 
 
   } 
  .aside__a-git,
  .aside__a-linkedin{
+height: 3rem;
   text-decoration: none;
   text-align: center;
   width: 50%;
@@ -351,7 +433,3 @@ transform: scale(1);
 width: 10%;
 height: 100%;
  } 
-
-
-
-
